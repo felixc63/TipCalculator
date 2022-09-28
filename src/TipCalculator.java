@@ -34,9 +34,9 @@ public class TipCalculator
         totalPerPerson = Math.round(totalPerPerson*100)/100.0;
 
         // Program displays total tip amount, total bill including tip, tip per person, and the total per person
-        System.out.println("Your total tip amount is " + totalTipAmount);
-        System.out.println("Your total bill including tip is " + totalBillIncludingTip);
-        System.out.println("Each person pays " + tipPerPerson + " in tips");
-        System.out.println("Each person pays " + totalPerPerson + " in total including bill and tip");
+        System.out.println("Your total tip amount is $" + totalTipAmount);
+        System.out.println("Your total bill including tip is $" + totalBillIncludingTip);
+        System.out.println("Each person pays $" + tipPerPerson + " in tips");
+        System.out.println("Each person pays $" + totalPerPerson + " in total including bill and tip");
     }
 }

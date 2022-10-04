@@ -27,16 +27,10 @@ public class TipCalculator
         double tipPerPerson = totalTipAmount/numberOfPeople;
         double totalPerPerson = totalBillIncludingTip/numberOfPeople;
 
-        //Rounds to the nearest 2 decimals
-        totalTipAmount = Math.round(totalTipAmount*100)/100.0;
-        totalBillIncludingTip = Math.round(totalBillIncludingTip*100)/100.0;
-        tipPerPerson = Math.round(tipPerPerson*100)/100.0;
-        totalPerPerson = Math.round(totalPerPerson*100)/100.0;
-
-        // Program displays total tip amount, total bill including tip, tip per person, and the total per person
-        System.out.println("Your total tip amount is $" + totalTipAmount);
-        System.out.println("Your total bill including tip is $" + totalBillIncludingTip);
-        System.out.println("Each person pays $" + tipPerPerson + " in tips");
-        System.out.println("Each person pays $" + totalPerPerson + " in total including bill and tip");
+        // Program displays total tip amount, total bill including tip, tip per person, and the total per person. Uses String.format("%.2f", ) to round to the nearest 2 decimals
+        System.out.println("Your total tip amount is $" + String.format("%.2f",totalTipAmount));
+        System.out.println("Your total bill including tip is $" + String.format("%.2f", totalBillIncludingTip));
+        System.out.println("Each person pays $" + String.format("%.2f", tipPerPerson) + " in tips");
+        System.out.println("Each person pays $" + String.format("%.2f", totalPerPerson) + " in total including bill and tip");
     }
 }
